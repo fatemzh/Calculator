@@ -1,0 +1,46 @@
+// Colors
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+// Typography
+$font-family: 'Space Mono', monospace;
+$font-weight-bold: 700;
+$font-size-body: 24px;
+
+// Global Styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+body {
+  font-size: $font-size-body;
+  font-weight: 100;
+  color: $very-dark-cyan;
+  background-color: $light-grayish-cyan;
+  line-height: 1.5;
+}
+
+// Mobile First Styles
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+//Desktop
+@media screen and (min-width: 768px) {
+
+}
