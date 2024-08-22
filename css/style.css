@@ -96,7 +96,7 @@ main #container #result {
   flex-direction: column;
   justify-content: space-between;
   background-color: hsl(183, 100%, 15%);
-  padding: 3rem 2rem;
+  padding: 2rem;
   border-radius: 0.8rem;
   min-height: 350px;
 }
@@ -105,7 +105,7 @@ main #container #result .totals {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin: 1.5rem 0;
 }
 main #container #result .totals .total-line {
   display: flex;

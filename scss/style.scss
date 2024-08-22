@@ -123,7 +123,7 @@ main {
             flex-direction: column;
             justify-content: space-between;
             background-color: $very-dark-cyan;
-            padding: 3rem 2rem;
+            padding:2rem;
             border-radius: 0.8rem;
             min-height: 350px;
 
@@ -132,7 +132,8 @@ main {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: flex-start;
-                margin-bottom: 2rem;
+                margin: 1.5rem 0;
+
                 .total-line{
                     display: flex;
                     flex-direction: column;
