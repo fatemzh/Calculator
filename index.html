@@ -20,7 +20,7 @@
         />
       </picture>
       <section id="container">
-        <h2>Bill</h2>
+        <h1>Bill</h1>
         <div class="total-displayed">
           <img
             src="./images/icon-dollar.svg"
@@ -29,7 +29,7 @@
           <p>142.55</p>
         </div>
         <div id="tips-container">
-          <h2>Select Tip &</h2>
+          <h1>Select Tip %</h1>
           <div id="tips">
             <ul>
               <li class="defined-tips">5%</li>
@@ -37,12 +37,12 @@
               <li class="defined-tips">15%</li>
               <li class="defined-tips">25%</li>
               <li class="defined-tips">50%</li>
-              <li class="undefined-tips">Custom</li>
+              <li id="undefined-tip">Custom</li>
             </ul>
           </div>
         </div>
         <div id="number-persons">
-          <h2>Number of People</h2>
+          <h1>Number of People</h1>
           <div class="total-displayed">
             <img
               src="./images/icon-person.svg"
@@ -54,13 +54,21 @@
         <div id="result">
           <div class="totals">
             <div class="total-line">
-              <h3>Tip Amount</h3>
+              <h2>Tip Amount</h2>
               <p>/ person</p>
             </div>
+            <span id="final-sum">
+              $4.27
+            </span>
+          </div>
+          <div class="totals">
             <div class="total-line">
-              <h3>Total</h3>
+              <h2>Total</h2>
               <p>/ person</p>
             </div>
+            <span id="final-sum">
+              $32.79
+            </span>
           </div>
           <button type="reset">Reset</button>
         </div>

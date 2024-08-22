@@ -16,18 +16,18 @@ $font-size-body: 24px;
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: $font-family;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
 }
 
 body {
-  font-size: $font-size-body;
-  font-weight: 100;
-  color: $very-dark-cyan;
-  background-color: $light-grayish-cyan;
-  line-height: 1.5;
+    font-size: $font-size-body;
+    font-weight: 100;
+    color: $very-dark-cyan;
+    background-color: $light-grayish-cyan;
+    line-height: 1.5;
 }
 
 // Mobile First Styles
@@ -37,10 +37,143 @@ main {
     margin: 0;
     padding: 0;
 
+    picture {
+        margin: 4rem auto 3rem;
+
+        img {
+            min-height: 80px;
+        }
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2rem;
+        background-color: white;
+        border-radius: 2rem 2rem 0 0;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $dark-grayish-cyan;
+            margin: 0.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .total-displayed {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #F3F8FB;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+
+            img {
+                height: 25px;
+            }
+
+            p {
+                font-weight: $font-weight-bold;
+                font-size: 2rem;
+            }
+        }
+
+        #tips-container {
+            margin-bottom: 2rem;
+            #tips ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+                gap: 1rem;
+
+                li {
+                    background-color: $very-dark-cyan;
+                    min-width: 50%;
+                    width: 100%;
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: $font-weight-bold;
+                    border-radius: 0.5rem;
+                    padding: 0.7rem 0;
+                    text-align: center;
+                }
+
+                li#undefined-tip  {
+                    color: $very-dark-cyan;
+                    background-color: $very-light-grayish-cyan;
+                }
+
+                li:hover, li#undefined-tip:hover{
+                    background-color: $strong-cyan;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        #result{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $very-dark-cyan;
+            padding: 3rem 2rem;
+            border-radius: 0.8rem;
+            min-height: 350px;
+
+            .totals{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 2rem;
+                .total-line{
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 50%;
+
+                    p{
+                        color: $very-light-grayish-cyan;
+                        opacity: 50%;
+                        font-size: 1rem;
+                    }
+                }
+
+                span{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    color: $strong-cyan;
+                    font-size: 2.4rem;
+                    font-weight: $font-weight-bold;
+                }
+            }
+
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                all: unset;
+                width: 90%;
+                margin: 0 auto;
+                background-color: $strong-cyan;
+                border-radius: 0.8rem;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 1rem;
+                color: $very-dark-cyan;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
 }
 
 
 //Desktop
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}

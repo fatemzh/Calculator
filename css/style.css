@@ -21,5 +21,124 @@ main {
   margin: 0;
   padding: 0;
 }
+main picture {
+  margin: 4rem auto 3rem;
+}
+main picture img {
+  min-height: 80px;
+}
+main #container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  background-color: white;
+  border-radius: 2rem 2rem 0 0;
+}
+main #container h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(186, 14%, 43%);
+  margin: 0.5rem 0;
+}
+main #container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+main #container .total-displayed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #F3F8FB;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+main #container .total-displayed img {
+  height: 25px;
+}
+main #container .total-displayed p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+main #container #tips-container {
+  margin-bottom: 2rem;
+}
+main #container #tips-container #tips ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem;
+}
+main #container #tips-container #tips ul li {
+  background-color: hsl(183, 100%, 15%);
+  min-width: 50%;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0;
+  text-align: center;
+}
+main #container #tips-container #tips ul li#undefined-tip {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+}
+main #container #tips-container #tips ul li:hover, main #container #tips-container #tips ul li#undefined-tip:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+main #container #result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(183, 100%, 15%);
+  padding: 3rem 2rem;
+  border-radius: 0.8rem;
+  min-height: 350px;
+}
+main #container #result .totals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+main #container #result .totals .total-line {
+  display: flex;
+  flex-direction: column;
+  min-height: 50%;
+}
+main #container #result .totals .total-line p {
+  color: hsl(189, 41%, 97%);
+  opacity: 50%;
+  font-size: 1rem;
+}
+main #container #result .totals span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: hsl(172, 67%, 45%);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+main #container #result button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  all: unset;
+  width: 90%;
+  margin: 0 auto;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=style.css.map */
