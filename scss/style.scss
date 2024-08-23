@@ -22,6 +22,9 @@ $font-size-body: 24px;
     font-family: $font-family;
 }
 
+html{
+    width: 100%;
+}
 body {
     font-size: $font-size-body;
     font-weight: 100;
@@ -37,7 +40,7 @@ main {
     margin: 0;
     padding: 0;
     width: 100%;
-    
+
     header {
         margin: 4rem auto 3rem;
 
@@ -198,6 +201,11 @@ main {
                 padding: 1rem;
                 color: $very-dark-cyan;
                 font-weight: $font-weight-bold;
+                cursor: pointer;
+            }
+
+            button:hover {
+                opacity: 50%;
             }
         }
     }
@@ -205,4 +213,56 @@ main {
 
 
 //Desktop
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1024px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #container {
+        display: grid;
+        flex-direction: row !important;
+        gap: 2rem;
+        padding: 3rem;
+        border-radius: 1rem !important;
+        box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+        background-color: $white;
+        max-width: 70%;
+
+        #left-section {
+            width: 50%;
+        }
+
+        .input-filler {
+            font-size: 1.8rem;
+        }
+
+        #tips-container {
+            #tips ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr) !important;
+                grid-template-rows: repeat(2, auto) !important;
+                gap: 1rem;
+            }
+        }
+
+        #result {
+            width: 50%;
+            grid-column: 2 / 3;
+            grid-row: 1 / span 3;
+            background-color: $very-dark-cyan;
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+
+        .final-sum {
+            font-size: 3.6rem;
+        }
+    }
+}

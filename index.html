@@ -19,57 +19,79 @@
         </picture>
       </header>
       <form id="container" novalidate aria-labelledby="tip-calculator-form">
-        <div class="total-displayed">
-          <label for="bill-amount">Bill</label>
-          <input type="number" class="input-filler" id="bill-amount" placeholder="142.55" aria-label="Enter the bill amount" required />
-        </div>
-        <div id="tips-container">
-          <h1>Select Tip %</h1>
-          <div id="tips">
-            <ul>
-              <li class="defined-tips">
-                <button type="button" data-tip="5">5%</button>
-              </li>
-              <li class="defined-tips">
-                <button type="button" data-tip="10">10%</button>
-              </li>
-              <li class="defined-tips">
-                <button type="button" data-tip="15">15%</button>
-              </li>
-              <li class="defined-tips">
-                <button type="button" data-tip="25">25%</button>
-              </li>
-              <li class="defined-tips">
-                <button type="button" data-tip="50">50%</button>
-              </li>
-              <li id="undefined-tip">
-                <input type="number" id="custom-tip" placeholder="Custom" aria-label="Enter custom tip percentage">
-              </li>
-            </ul>
+        <div id="left-section">
+          <div class="total-displayed">
+            <label for="bill-amount">Bill</label>
+            <input
+              type="number"
+              class="input-filler"
+              id="bill-amount"
+              placeholder="142.55"
+              aria-label="Enter the bill amount"
+              required
+            />
           </div>
-        </div>
-        <div class="total-displayed">
-          <label for="bill-amount">Number of People</label>
-          <input type="number" class="input-filler" id="num-people" placeholder="5" aria-label="Enter the number of people" required />
+          <div id="tips-container">
+            <h1>Select Tip %</h1>
+            <div id="tips">
+              <ul>
+                <li class="defined-tips">
+                  <button type="button" data-tip="5">5%</button>
+                </li>
+                <li class="defined-tips">
+                  <button type="button" data-tip="10">10%</button>
+                </li>
+                <li class="defined-tips">
+                  <button type="button" data-tip="15">15%</button>
+                </li>
+                <li class="defined-tips">
+                  <button type="button" data-tip="25">25%</button>
+                </li>
+                <li class="defined-tips">
+                  <button type="button" data-tip="50">50%</button>
+                </li>
+                <li id="undefined-tip">
+                  <input
+                    type="number"
+                    id="custom-tip"
+                    placeholder="Custom"
+                    aria-label="Enter custom tip percentage"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="total-displayed">
+            <label for="bill-amount">Number of People</label>
+            <input
+              type="number"
+              class="input-filler"
+              id="num-people"
+              placeholder="5"
+              aria-label="Enter the number of people"
+              required
+            />
+          </div>
         </div>
         <section id="result" aria-labelledby="calculation-results">
-          <div class="totals">
-            <div class="total-line">
-              <h2>Tip Amount</h2>
-              <p>/ person</p>
+          <div id="upper-part">
+            <div class="totals">
+              <div class="total-line">
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+              <span class="final-sum"> $4.27 </span>
             </div>
-            <span class="final-sum"> $4.27 </span>
-          </div>
-          <div class="totals">
-            <div class="total-line">
-              <h2>Total</h2>
-              <p>/ person</p>
+            <div class="totals">
+              <div class="total-line">
+                <h2>Total</h2>
+                <p>/ person</p>
+              </div>
+              <span class="final-sum"> $32.79 </span>
             </div>
-            <span class="final-sum"> $32.79 </span>
           </div>
           <button type="reset" aria-label="Reset the form">Reset</button>
-          </section>
-        </div>
+        </section>
       </form>
     </main>
   </body>
