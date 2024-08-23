@@ -25,6 +25,7 @@ $font-size-body: 24px;
 html{
     width: 100%;
 }
+
 body {
     font-size: $font-size-body;
     font-weight: 100;
@@ -83,6 +84,11 @@ main {
             font-size: 2rem;
             color: $very-dark-cyan;
             text-align: right;
+            cursor: pointer;
+        }
+
+        .input-filler:focus{
+            outline: solid 3px $strong-cyan;
         }
 
         #bill-amount,
@@ -132,11 +138,15 @@ main {
                 }
 
                 li:hover,
-                li:active,
+                li:focus,
                 li#undefined-tip:hover,
-                li#undefined-tip:active {
+                li#undefined-tip:focus {
                     background-color: $strong-cyan;
                     cursor: pointer;
+                }
+            
+                li.active {
+                    background-color: $strong-cyan;
                 }
 
                 button {

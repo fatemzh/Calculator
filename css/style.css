@@ -64,6 +64,10 @@ main #container .input-filler {
   font-size: 2rem;
   color: hsl(183, 100%, 15%);
   text-align: right;
+  cursor: pointer;
+}
+main #container .input-filler:focus {
+  outline: solid 3px hsl(172, 67%, 45%);
 }
 main #container #bill-amount,
 main #container #num-people {
@@ -107,11 +111,14 @@ main #container #tips-container #tips ul li#undefined-tip {
   width: 100%;
 }
 main #container #tips-container #tips ul li:hover,
-main #container #tips-container #tips ul li:active,
+main #container #tips-container #tips ul li:focus,
 main #container #tips-container #tips ul li#undefined-tip:hover,
-main #container #tips-container #tips ul li#undefined-tip:active {
+main #container #tips-container #tips ul li#undefined-tip:focus {
   background-color: hsl(172, 67%, 45%);
   cursor: pointer;
+}
+main #container #tips-container #tips ul li.active {
+  background-color: hsl(172, 67%, 45%);
 }
 main #container #tips-container #tips ul button {
   all: unset;
