@@ -19,37 +19,39 @@
           alt="Logo de la calculatrice avec comme écriture Splitter"
         />
       </picture>
-      <section id="container">
-        <h1>Bill</h1>
+      <form id="container">
         <div class="total-displayed">
-          <img
-            src="./images/icon-dollar.svg"
-            alt="Icon d'un dollar représentant la monnaie de la calculatrice"
-          />
-          <p>142.55</p>
+          <label for="bill-amount">Bill</label>
+          <input type="number" class="input-filler" id="bill-amount" placeholder="142.55" />
         </div>
         <div id="tips-container">
           <h1>Select Tip %</h1>
           <div id="tips">
             <ul>
-              <li class="defined-tips">5%</li>
-              <li class="defined-tips">10%</li>
-              <li class="defined-tips">15%</li>
-              <li class="defined-tips">25%</li>
-              <li class="defined-tips">50%</li>
-              <li id="undefined-tip">Custom</li>
+              <li class="defined-tips">
+                <button type="button" data-tip="5">5%</button>
+              </li>
+              <li class="defined-tips">
+                <button type="button" data-tip="10">10%</button>
+              </li>
+              <li class="defined-tips">
+                <button type="button" data-tip="15">15%</button>
+              </li>
+              <li class="defined-tips">
+                <button type="button" data-tip="25">25%</button>
+              </li>
+              <li class="defined-tips">
+                <button type="button" data-tip="50">50%</button>
+              </li>
+              <li id="undefined-tip">
+                <input type="number" id="custom-tip" placeholder="Custom">
+            </li>
             </ul>
           </div>
         </div>
-        <div id="number-persons">
-          <h1>Number of People</h1>
-          <div class="total-displayed">
-            <img
-              src="./images/icon-person.svg"
-              alt="Icon représentant une personne"
-            />
-            <p>5</p>
-          </div>
+        <div class="total-displayed">
+          <label for="bill-amount">Number of People</label>
+          <input type="number" class="input-filler" id="num-people" placeholder="5" />
         </div>
         <div id="result">
           <div class="totals">
@@ -57,22 +59,18 @@
               <h2>Tip Amount</h2>
               <p>/ person</p>
             </div>
-            <span id="final-sum">
-              $4.27
-            </span>
+            <span id="final-sum"> $4.27 </span>
           </div>
           <div class="totals">
             <div class="total-line">
               <h2>Total</h2>
               <p>/ person</p>
             </div>
-            <span id="final-sum">
-              $32.79
-            </span>
+            <span id="final-sum"> $32.79 </span>
           </div>
           <button type="reset">Reset</button>
         </div>
-      </section>
+      </form>
     </main>
   </body>
 </html>

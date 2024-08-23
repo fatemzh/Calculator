@@ -65,28 +65,41 @@ main {
             color: white;
         }
 
-        .total-displayed {
+        .input-filler {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-items: center;
-            padding: 1rem;
+            padding: 2rem;
             background-color: #F3F8FB;
             border-radius: 0.5rem;
-            margin-bottom: 1.5rem;
+            margin: 0.6rem 0;
+            width: 100%;
+            border: none;
+            font-weight: $font-weight-bold;
+            font-size: 2rem;
+            color: $very-dark-cyan;
+            text-align: right;
+        }
 
-            img {
-                height: 25px;
-            }
+        #bill-amount,
+        #num-people {
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            height: 20px;
+        }
 
-            p {
-                font-weight: $font-weight-bold;
-                font-size: 2rem;
-            }
+        #bill-amount {
+            background-image: url('../images/icon-dollar.svg');
+        }
+
+        #num-people {
+            background-image: url('../images/icon-person.svg');
+            margin-bottom: 3rem;
         }
 
         #tips-container {
-            margin-bottom: 2rem;
+            margin: 2rem 0;
+
             #tips ul {
                 list-style: none;
                 display: grid;
@@ -106,47 +119,61 @@ main {
                     text-align: center;
                 }
 
-                li#undefined-tip  {
+                li#undefined-tip {
+                    display: flex;
+                    justify-content: center !important;
                     color: $very-dark-cyan;
                     background-color: $very-light-grayish-cyan;
+                    width: 100%;
                 }
 
-                li:hover, li#undefined-tip:hover{
+                li:hover,
+                li:active,
+                li#undefined-tip:hover,
+                li#undefined-tip:active {
                     background-color: $strong-cyan;
                     cursor: pointer;
+                }
+
+                button {
+                    all: unset;
+                }
+
+                #custom-tip {
+                    all: unset;
                 }
             }
         }
 
-        #result{
+        #result {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             background-color: $very-dark-cyan;
-            padding:2rem;
+            padding: 2rem;
             border-radius: 0.8rem;
             min-height: 350px;
 
-            .totals{
+            .totals {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: flex-start;
                 margin: 1.5rem 0;
 
-                .total-line{
+                .total-line {
                     display: flex;
                     flex-direction: column;
                     min-height: 50%;
 
-                    p{
+                    p {
                         color: $very-light-grayish-cyan;
                         opacity: 50%;
                         font-size: 1rem;
                     }
                 }
 
-                span{
+                span {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -156,7 +183,7 @@ main {
                 }
             }
 
-            button{
+            button {
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
