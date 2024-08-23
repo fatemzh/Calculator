@@ -22,7 +22,7 @@ $font-size-body: 24px;
     font-family: $font-family;
 }
 
-html{
+html {
     width: 100%;
 }
 
@@ -87,7 +87,7 @@ main {
             cursor: pointer;
         }
 
-        .input-filler:focus{
+        .input-filler:focus {
             outline: solid 3px $strong-cyan;
         }
 
@@ -144,7 +144,7 @@ main {
                     background-color: $strong-cyan;
                     cursor: pointer;
                 }
-            
+
                 li.active {
                     background-color: $strong-cyan;
                 }
